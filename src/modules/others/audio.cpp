@@ -1,4 +1,7 @@
 #include "audio.h"
+#include "globals.h"
+
+#if defined(HAS_NS4168_SPKR)
 #include "AudioFileSourceFunction.h"
 #include "AudioGeneratorMIDI.h"
 #include "AudioGeneratorWAV.h"
@@ -8,6 +11,7 @@
 #include "core/mykeyboard.h"
 #include <ESP8266Audio.h>
 #include <ESP8266SAM.h>
+#endif
 
 #if defined(HAS_NS4168_SPKR)
 
